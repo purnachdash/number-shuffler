@@ -1,0 +1,9 @@
+<div style="width:90%;height:90%">
+  <div *ngFor="let number of this.numbers" class=grid{{number}} >
+   <span class="spanText">{{number}}</span> 
+  </div>
+  <div >
+    <button  class="shuffle" (click)="shuffle()">Shuffle</button>
+    <button class="sort" (click)="sort()">Sort</button>
+  </div>
+</div>
